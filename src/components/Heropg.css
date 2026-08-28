@@ -1,0 +1,25 @@
+/* Heropg.css */
+
+* {
+  margin-left: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-img {
+  width: 100%;
+  height: 90vh;
+  
+  overflow: hidden;
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+img {
+  opacity: 0.5;
+}

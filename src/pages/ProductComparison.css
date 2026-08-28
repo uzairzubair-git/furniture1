@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+.comparison-page {
+  color: #333;
+  background: white;
+}
+
+.comparison-hero {
+  text-align: center;
+
+  padding: 50px 20px;
+
+  background: #f9f1e7;
+}
+
+.comparison-hero h1 {
+  margin-bottom: 10px;
+}
+
+.comparison-hero a {
+  color: #333;
+  text-decoration: none;
+}
+
+.comparison-intro {
+  max-width: 1180px;
+
+  margin: 45px auto;
+
+  padding: 0 20px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.1fr 1fr 1fr 1fr;
+
+  gap: 25px;
+
+  align-items: start;
+}
+
+.comparison-add h2 {
+  font-size: 18px;
+
+  line-height: 1.4;
+}
+
+.comparison-add a {
+  color: #666;
+}
+
+.comparison-product {
+  background: #f9f9f9;
+
+  padding: 12px;
+}
+
+.comparison-image {
+  height: 180px;
+
+  background: #eee9e2;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #999;
+}
+
+.comparison-product h3 {
+  margin: 12px 0 5px;
+
+  font-size: 16px;
+}
+
+.comparison-rating {
+  margin-top: 10px;
+
+  color: #e0a500;
+}
+
+.comparison-rating span {
+  color: #888;
+
+  margin-left: 5px;
+}
+
+.add-product select {
+  width: 100%;
+
+  padding: 12px;
+
+  background: #b88e2f;
+
+  color: white;
+
+  border: 0;
+}
+
+.comparison-table-wrap {
+  max-width: 1180px;
+
+  margin: auto;
+
+  padding: 0 20px 70px;
+
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 700px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border-bottom: 1px solid #eee;
+
+  padding: 17px 15px;
+
+  text-align: left;
+
+  vertical-align: top;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.comparison-table th {
+  width: 28%;
+
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .comparison-intro {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 550px) {
+  .comparison-intro {
+    grid-template-columns: 1fr;
+  }
+}

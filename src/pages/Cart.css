@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+.cart-page {
+  min-height: 100vh;
+  color: #333;
+}
+
+/* HERO */
+
+.cart-hero {
+  text-align: center;
+
+  padding: 50px 20px;
+
+  background: #f9f1e7;
+}
+
+.cart-hero h1 {
+  margin: 0 0 10px;
+  font-size: 34px;
+}
+
+.cart-hero a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* LAYOUT */
+
+.cart-layout {
+  max-width: 1180px;
+
+  margin: 60px auto;
+
+  padding: 0 20px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 330px;
+
+  gap: 45px;
+
+  align-items: start;
+}
+
+/* TABLE */
+
+.cart-items {
+  overflow-x: auto;
+}
+
+.cart-head,
+.cart-item {
+  display: grid;
+
+  grid-template-columns:
+    2fr 1fr 1fr 1fr 30px;
+
+  gap: 15px;
+
+  align-items: center;
+
+  min-width: 650px;
+}
+
+.cart-head {
+  background: #f9f1e7;
+
+  padding: 18px 15px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.cart-item {
+  padding: 25px 15px;
+
+  border-bottom: 1px solid #eee;
+
+  color: #777;
+
+  font-size: 13px;
+}
+
+.cart-image {
+  width: 90px;
+  height: 80px;
+
+  background: #f4f1ed;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #999;
+
+  font-size: 11px;
+}
+
+.cart-name {
+  color: #333;
+}
+
+.cart-item input {
+  width: 45px;
+  height: 35px;
+
+  text-align: center;
+
+  border: 1px solid #999;
+}
+
+.cart-item button {
+  border: 0;
+
+  background: none;
+
+  color: #b88e2f;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+/* TOTAL */
+
+.cart-total {
+  background: #f9f1e7;
+
+  padding: 30px;
+}
+
+.cart-total h2 {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.cart-total div {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin: 20px 0;
+
+  font-size: 13px;
+}
+
+.gold {
+  color: #b88e2f;
+}
+
+.cart-total a {
+  display: block;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  color: #333;
+
+  border: 1px solid #333;
+
+  padding: 13px;
+
+  margin-top: 30px;
+}
+
+.cart-total a:hover {
+  background: #b88e2f;
+  color: white;
+}
+
+@media (max-width: 850px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+}

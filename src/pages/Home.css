@@ -1,0 +1,489 @@
+/* ================================
+   HOME PAGE
+================================ */
+
+.home-page {
+  width: 100%;
+  background: #ffffff;
+  color: #3a3a3a;
+}
+
+/* ================================
+   HERO
+================================ */
+
+.home-hero {
+  width: 100%;
+}
+
+.hero-placeholder {
+  min-height: 520px;
+
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+
+  background-color: #f9f1e7;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 60px 8%;
+}
+
+.hero-content {
+  width: 450px;
+
+  background: #fff3e3;
+
+  padding: 45px;
+}
+
+.hero-content p:first-child {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  color: #b88e2f;
+  font-size: 42px;
+  line-height: 1.2;
+  margin: 10px 0 20px;
+}
+
+.hero-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.hero-content button {
+  margin-top: 20px;
+
+  padding: 15px 35px;
+
+  border: none;
+
+  background: #b88e2f;
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* ================================
+   BROWSE RANGE
+================================ */
+
+.range-section {
+  text-align: center;
+  padding: 70px 6%;
+}
+
+.range-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.range-section > p {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.range-grid {
+  max-width: 1100px;
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.range-card {
+  text-align: center;
+}
+
+.range-image {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.range-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.3s;
+}
+
+.range-image img:hover {
+  transform: scale(1.03);
+}
+
+.range-card h3 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+/* ================================
+   PRODUCTS
+================================ */
+
+.home-products {
+  padding: 60px 6%;
+  text-align: center;
+}
+
+.home-products > h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.home-product-grid {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+.home-product-card {
+  position: relative;
+
+  background: #f4f5f7;
+
+  text-align: left;
+
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+.home-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Product image */
+
+.home-product-image {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.home-product-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* Badge */
+
+.home-badge {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  z-index: 2;
+}
+
+.sale-badge {
+  background: #e97171;
+}
+
+.new-badge {
+  background: #2ec1ac;
+}
+
+/* Product information */
+
+.home-product-info {
+  padding: 18px;
+}
+
+.home-product-info h3 {
+  font-size: 20px;
+
+  margin: 0 0 8px;
+
+  color: #3a3a3a;
+}
+
+.home-category {
+  color: #898989;
+
+  font-size: 14px;
+
+  margin-bottom: 12px;
+}
+
+.home-price {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.home-price strong {
+  font-size: 17px;
+}
+
+.home-price s {
+  color: #999;
+
+  font-size: 14px;
+}
+
+/* Cart button */
+
+.home-cart-button {
+  width: 100%;
+
+  margin-top: 15px;
+
+  padding: 10px;
+
+  border: 1px solid #b88e2f;
+
+  background: white;
+
+  color: #b88e2f;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.home-cart-button:hover {
+  background: #b88e2f;
+  color: white;
+}
+
+/* Show more */
+
+.show-more-button {
+  margin-top: 40px;
+
+  width: 245px;
+
+  padding: 14px;
+
+  background: white;
+
+  color: #b88e2f;
+
+  border: 2px solid #b88e2f;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.show-more-button:hover {
+  background: #b88e2f;
+  color: white;
+}
+
+/* ================================
+   INSPIRATION
+================================ */
+
+.home-inspiration {
+  margin-top: 70px;
+
+  padding: 70px 7%;
+
+  background: #fcf8f3;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+.inspiration-text {
+  width: 35%;
+}
+
+.inspiration-text h2 {
+  font-size: 38px;
+
+  line-height: 1.2;
+
+  color: #3a3a3a;
+}
+
+.inspiration-text p {
+  color: #666;
+
+  line-height: 1.6;
+
+  margin: 20px 0;
+}
+
+.inspiration-text button {
+  background: #b88e2f;
+
+  color: white;
+
+  border: none;
+
+  padding: 14px 30px;
+
+  cursor: pointer;
+}
+
+.inspiration-images {
+  width: 60%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+
+.inspiration-images img {
+  width: 100%;
+
+  height: 400px;
+
+  object-fit: cover;
+}
+
+/* ================================
+   GALLERY
+================================ */
+
+.home-gallery {
+  padding: 70px 6%;
+
+  text-align: center;
+}
+
+.home-gallery > p {
+  color: #898989;
+
+  margin-bottom: 5px;
+}
+
+.home-gallery h2 {
+  font-size: 32px;
+
+  margin-bottom: 40px;
+}
+
+.gallery-grid {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(6, 1fr);
+
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+
+  height: 220px;
+
+  object-fit: cover;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+  .home-product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .range-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .inspiration-text {
+    width: 100%;
+  }
+
+  .inspiration-images {
+    width: 100%;
+  }
+
+  .home-inspiration {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-placeholder {
+    min-height: 450px;
+
+    justify-content: center;
+
+    padding: 30px 20px;
+  }
+
+  .hero-content {
+    width: 100%;
+
+    padding: 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .range-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inspiration-images {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
